@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="shortcut icon"
+            href="./assets/img/logo-nova.png"
+            type="image/x-icon"
+        />
+        <title>AleBrasil - Sistema de Ponto</title>
+    </head>
+    <body>
+        <div class="background"></div>
+
+        <div class="formulario">
+            <h1>Seja bem-vindo!</h1>
+
+            <p>Informe seus dados abaixo para entrar</p>
+            <form>
+                <div class="nome-formulario">
+                    <label for="user">Usuário</label>
+                    <input
+                        type="text"
+                        placeholder="Seu nome"
+                        required
+                        class="campo-formulario"
+                    />
+                </div>
+
+                <div class="id-formulario">
+                    <label for="user-id">ID</label>
+                    <input
+                        type="text"
+                        placeholder="Seu ID"
+                        required
+                        class="campo-formulario"
+                    />
+                </div>
+
+                <div class="final-form">
+                    <div class="final-form-continue">
+                        <input
+                            type="checkbox"
+                            name="continue"
+                            class="campo-formulario"
+                        />
+                        <label for="continue">Continuar logado</label>
+                    </div>
+
+                    <div class="final-form-id">
+                        <label for="forgot"
+                            ><a href="#">Esqueci meu ID</a></label
+                        >
+                    </div>
+                </div>
+
+                <button>
+                    <span>Entrar</span>
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

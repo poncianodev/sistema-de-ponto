@@ -1,0 +1,143 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #300f36;
+}
+
+a:hover {
+    transition: all 0.4s ease-in-out;
+    color: #f68c27;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-image: url("./assets/img/aside-bg.png");
+    background-size: cover;
+    background-position-x: 94%;
+}
+
+.formulario {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 1rem;
+}
+
+.nome-formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.id-formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.final-form {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.campo-formulario {
+    padding: 0.5rem;
+    max-width: 70%;
+    border-radius: 5px;
+    border: solid #d0d0d0;
+    background-color: #ffffffea;
+}
+
+button {
+    width: 30%;
+    margin-top: 1.3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #300f36;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: none;
+}
+
+button:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #f68c27;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+}
+
+button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+}
+
+button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 10px;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover span {
+    color: #fff;
+    animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
